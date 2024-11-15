@@ -2,13 +2,13 @@
 ## Nivell 1 - Patró Builder
 Apliquem el patró Builder per recrear la elaboració d'una pizza en passos successius: tipus de massa (fina, normal, doble), mida (individual o familiar), i els ingredients que la caracteritzen. L'usuari triarà la pizza entre les proposades a la carta, la mida i el tipus de massa.
 #### Interfície Builder
-Definim la interfície Builder, amb els mètodes necessaris per elaborar la pizza:
-reset() --> per instanciar una nova Pizza;
-setName() --> per establir el seu nom;
-setDough(Dough dough) --> per establir el tipus de massa;
-setSize(Size size) --> per establir la seva mida;
-setToppings() --> per establir la llista d'ingredients;
-getPizza() --> per obtenir el resultat
+Definim la interfície Builder, amb els mètodes necessaris per elaborar la pizza:<br/>
+reset() --> per instanciar una nova Pizza;<br/>
+setName() --> per establir el seu nom;<br/>
+setDough(Dough dough) --> per establir el tipus de massa;<br/>
+setSize(Size size) --> per establir la seva mida;<br/>
+setToppings() --> per establir la llista d'ingredients;<br/>
+getPizza() --> per obtenir el resultat<br/>
 #### Classes concretes de Builder
 Tindrem una classe concreta de Builder per a cada mena de pizza proposada, que implementarà els mètodes de la interfície Builder, amb dos atributs: un objecte Pizza, i el nom de la pizza (static i final).
 #### Classe Pizza Master
