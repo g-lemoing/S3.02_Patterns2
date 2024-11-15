@@ -8,13 +8,13 @@ import nivell1.modules.Topping;
 
 import java.util.List;
 
-public class HawaianaPizzaBuilder implements PizzaBuilder {
+public class MargaritaPizzaBuilder implements PizzaBuilder {
     private Pizza pizza;
-    private final static String NAME = "Hawaina";
-
-    public HawaianaPizzaBuilder(){
+    private final static String NAME = "Margarita";
+    public MargaritaPizzaBuilder(){
         this.reset();
     }
+
     @Override
     public void reset() {
         this.pizza = new Pizza();
@@ -33,14 +33,12 @@ public class HawaianaPizzaBuilder implements PizzaBuilder {
     @Override
     public void setDough(Dough dough) {
         this.pizza.setDough(dough);
-
     }
 
     @Override
     public void setTopping() {
-        List<Topping> toppings = List.of(new Topping[]{
-                Topping.Mozzarela, Topping.Tomaquet, Topping.Pernil_Dolc, Topping.Pinya
-        });
+        List<Topping> toppings = List.of(
+                Topping.Tomaquet, Topping.Mozzarela);
         this.pizza.setToppings(toppings);
     }
 
@@ -51,8 +49,10 @@ public class HawaianaPizzaBuilder implements PizzaBuilder {
 
     @Override
     public String toString() {
-        return "Pizza Hawaiana: " +
+        return "Pizza Margarita: " +
                 pizza +
                 '}';
+
     }
 }
+

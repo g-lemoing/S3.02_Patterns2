@@ -1,4 +1,4 @@
 package nivell1.modules;
 
-public enum Dough {
+public enum Dough {Fina, Normal, Doble
 }
