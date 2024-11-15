@@ -3,7 +3,7 @@ package nivell2.modules;
 import nivell2.interfaces.Agency;
 
 public class StockExchangeAgency implements Agency {
-    private String name;
+    private final String name;
     private String event;
 
     public StockExchangeAgency(String name){
