@@ -35,7 +35,9 @@ Declarem un únic mètode NotifyShop(), per notificar a la botiga quan la valida
 #### Classe que invoca (botiga)
 Té com a atribut la passarel·la de pagament i implementa el mètode de la interfície: indica el resultat de la transacció i en cas de ser exitosa, retorna un número de referència de la transacció. Conté també un mètode per cridar al mètode de validació de la passarel·la.
 #### Classe invocada (passarel·la)
-
+La classe invocada té com a atribut un objecte Callback i un mètode que aquí simula una validació de pagament. Una funció boolean random determina si la transacció queda validada, i en cas de que sí, assigna un número de referencia a la mateixa. Crida al mètode notifyShop() del Callback, passant per paràmetre tant el pagament de referència com el resultat.
+#### Client
+La classe client instancia la classe de la botiga i demana a l'usuari l'import i el mètode de pagament a utilitzar. Invoca llavors el mètode de validació de la botiga, que desencadena tot el procés de validació.
 
 ## Instruccions d'instal·lació
 Tecnologies Utilitzades : IDE IntelliJ Idea v 2024.2.2 (Community Edition), Java, SDK openjdk-22 Oracle OpenJDK 22.0.2
