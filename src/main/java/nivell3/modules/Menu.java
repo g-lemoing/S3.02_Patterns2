@@ -16,7 +16,7 @@ public class Menu {
             try {
                 sel = scanner.nextByte();
             } catch (InputMismatchException e) {
-                System.out.println("Opció errònia");;
+                System.out.println("Opció errònia");
             }finally {
                 scanner.nextLine();
             }
