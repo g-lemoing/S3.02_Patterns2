@@ -29,6 +29,12 @@ Establim l'esdeveniment de què la borsa està baixant, i comprovem que cada ag�
 Donem de baixa una de les agències, establim un nou esdeveniment, i comprovem que només les agències subscrites reben la notificació.
 
 ## Nivell 3 - Patró Callback
+Implementem el patró Callback per simular la validació d'un pagament en una sabateria per una passarel·la de pagament.
+#### Interfície Callback
+Declarem un únic mètode NotifyShop(), per notificar a la botiga quan la validació hagi terminat. Contindrà el pagament referit i el resultat de la transacció.
+#### Classe que invoca (botiga)
+Té com a atribut la passarel·la de pagament i implementa el mètode de la interfície: indica el resultat de la transacció i en cas de ser exitosa, retorna un número de referència de la transacció. Conté també un mètode per cridar al mètode de validació de la passarel·la.
+#### Classe invocada (passarel·la)
 
 
 ## Instruccions d'instal·lació
