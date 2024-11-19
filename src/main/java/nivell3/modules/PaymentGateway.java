@@ -16,7 +16,7 @@ public class PaymentGateway {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
         Random random = new Random();
         boolean success = random.nextBoolean();

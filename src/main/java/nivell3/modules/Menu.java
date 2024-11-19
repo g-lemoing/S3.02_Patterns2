@@ -33,12 +33,13 @@ public class Menu {
     public static void menu() {
         boolean nextTransaction;
         do{
+            ShoeShop shoeShop = new ShoeShop();
+
             double amount = askDouble("\nEntra l'import de la transacció: ");
             PaymentMethod paymentMethod = menuAskPaymentMethod(
                     "Entra el mètode de pagament [Targeta, Paypal, Domiciliacio] ");
             Payment payment = new Payment(amount, paymentMethod);
 
-            ShoeShop shoeShop = new ShoeShop();
             shoeShop.callValidatePayment(payment);
             nextTransaction = Menu.askYesNo("Vol processar una nova transacció? S--> Sí, N --> No ");
         } while (nextTransaction);
